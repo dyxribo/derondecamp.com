@@ -4,6 +4,7 @@
   "configurations": [
     {
       "name": "ng serve",
+      "runtimeArgs": ["open"],
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
