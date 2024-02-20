@@ -6,8 +6,6 @@
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: hidden;
   margin: 0;
 }
 
@@ -15,5 +13,5 @@ html {
   background-color: rgb(37, 35, 35); 
   min-height:  100vh; 
   margin: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
