@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BreakpointObserver, Breakpoints, LayoutModule } from '@angular/cdk/layout';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouteViewComponent } from './route-view/route-view.component';
 import { Observable, map } from 'rxjs';
 import { match } from 'assert';
 import { Platform } from '@angular/cdk/platform';
@@ -11,7 +12,7 @@ import { Platform } from '@angular/cdk/platform';
   selector: 'app-root',
   standalone: true,
   encapsulation: ViewEncapsulation.None,
-  imports: [CommonModule, LayoutModule, NavbarComponent, FooterComponent],
+  imports: [CommonModule, LayoutModule, NavbarComponent, FooterComponent, RouteViewComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

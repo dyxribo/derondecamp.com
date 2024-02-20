@@ -5,18 +5,11 @@
   rel="stylesheet"
 />
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-</style>
-
 @if (screen_status.is_widescreen | async) {
-  <h1>widescreen!!</h1>
+  <script>console.log("this is a widescreen device.")</script>
 }
 <div>
   <app-navbar></app-navbar>
+  <app-route-view></app-route-view>
   <app-footer></app-footer>
 </div>
