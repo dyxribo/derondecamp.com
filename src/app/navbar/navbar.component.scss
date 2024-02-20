@@ -1,0 +1,50 @@
+$primary_color: rgb(37, 35, 35);
+$secondary_color: rgb(241, 97, 125);
+
+html {
+  background-color: $primary_color;
+}
+
+.navbar {
+  display: flex;
+  height: 60px;
+  padding: 10px;
+  margin-bottom: 0px;
+  
+  .menu_items {
+    float: left;
+    padding: 10px;
+    transition: fill-opacity 0.3s;
+    a {
+      padding: 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      border-radius: 500px;
+    }
+    .active_nav_item {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $secondary_color;
+      border-radius: 0;
+      color: $secondary_color;
+
+      :hover {
+        background: none;
+      }
+    }
+    :hover {
+      background-color: rgba($color: white, $alpha: 0.2);
+      //animation-name: glow;
+      //animation-duration: 0.5s;
+      //animation-fill-mode: both;
+      fill-opacity: 0.2;
+    }
+  }
+}
+
+.logo {
+  width: 30px;
+  margin-top: 5px;
+  margin-right: 30px;
+}

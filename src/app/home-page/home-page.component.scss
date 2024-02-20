@@ -1,6 +1,9 @@
 $primary_color: rgb(37, 35, 35);
 $secondary_color: rgb(241, 97, 125);
 
+* {
+  color: whitesmoke;
+}
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   align-self: center;
@@ -10,17 +13,20 @@ $secondary_color: rgb(241, 97, 125);
   //background-color: lightcoral;
   padding-bottom: 100px;
   .name_announce {
-    display: flex;
-    justify-content: center;
-    font-size: 120px;
-    font-weight: 100;
-    margin: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 5em;
+    font-weight: 150;
     text-align: center;
   }
 
   .tagline {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2em;
+    padding-left: 2em;
     font-weight: 200;
     text-align: center;
   }
@@ -28,42 +34,71 @@ $secondary_color: rgb(241, 97, 125);
 
 .about_me {
   //background-color: lightgreen;
-  display: flex;
+  display: block;
+  width: 100%;
   overflow: hidden;
+  text-align: center;
+  margin-bottom: 10em;
 
-  .self_photo img {
-    display: flex;
-    width: 300px;
-    height: 300px;
-    border: 3px solid $secondary_color;
-    border-radius: 50%;
-    margin-left: 100px;
-    margin-right: 50px;
+  .self_photo {
+    display: inline-block;
+    width: 15em;
+    height: 15em;
+    margin-right: 5em;
+
+    img {
+      width: inherit;
+      height: inherit;
+      border: 3px solid $secondary_color;
+      border-radius: 50%;
+    }
   }
 
   .self_info {
-    max-width: 300;
+    display: inline-block;
+    text-align: left;
+    width: 40%;
   }
 }
 
 .cv_button_wrapper {
-  display: flex;
-  justify-content: space-evenly;
+  display: block;
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+
   a {
     text-decoration: none;
     color: inherit;
+    display: inline-block; /* Display content inline */
+    text-align: center;
+    width: inherit;
   }
+
   .cv_button {
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-block;
+    margin: auto;
     background-color: $secondary_color;
     border: 2px solid $primary_color;
-    width: 200px;
     border-radius: 500px;
+    padding: 10px;
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
+  }
 
-    p {
-      justify-self: center;
-    }
+  .material-symbols-outlined {
+    display: inline-block;
+    font-size: 1.5em;
+    vertical-align: middle;
+  }
+
+  p {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
   }
 }
 

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Widescreen } from '../app.component';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home-page',
@@ -10,4 +12,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class HomePageComponent {
 
+  constructor() {
+
+  }
+
+  ngOnInit() {
+    
+  }
 }
