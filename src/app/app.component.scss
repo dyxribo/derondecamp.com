@@ -18,7 +18,7 @@ body {
 /* this will push the current router page to be 85% of the viewport height. due to angular being dynamic and all, typical footer setup is tricky, this is a simple workaround. */
 .push_footer {
   display: block;
-  height: 85vh;
+  height: 100%;
 }
 
 /* set the color, and max out the height at all times. overflow-y to auto for autohide of scrollbar. */
