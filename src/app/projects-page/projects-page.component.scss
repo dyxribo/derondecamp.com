@@ -1,0 +1,72 @@
+/* main color. used for background. */
+$primary_color: rgb(37, 35, 35);
+/* secondary color. used for pretty much everyhing besides plaintext and the background. */
+$secondary_color: rgb(241, 97, 125);
+/* universal text color. */
+* {
+  color: whitesmoke;
+}
+/* decorate our links to match the theme. pink is the best color :) */
+a {
+  color: $secondary_color;
+  text-decoration: none;
+}
+/* settings for the used mat-icons (in this case its the download icon). */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  align-self: center;
+}
+
+/* title section for the page. */
+.title_div {
+  /* big text announcing the name of the page. */
+  .name_announce {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 5em;
+    font-weight: 150;
+    text-align: center;
+  }
+  /* subtext under the big text, a tagline or follow up sentence to the title. */
+  .tagline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+/* any and all text that is highlighted. */
+.highlighted_text {
+  color: $secondary_color;
+}
+
+/* grid used for layout of projects and project description. */
+.grid {
+  display: grid;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 40% 60%;
+  /* container used to hold image within the grid. allows for easier size and position management. */
+  .img_container {
+    width: 100%;
+    height:fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* image for the project. */
+    img {
+      width: inherit;
+      height: auto;
+      margin: auto;
+    }
+  }
+  /* project title and paragraph description located beside the project image. */
+  h2, p {
+    text-align: center;
+  }
+}

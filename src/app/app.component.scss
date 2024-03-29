@@ -1,3 +1,7 @@
+/* main color. used for background. */
+$primary_color: rgb(37, 35, 35);
+
+/* setup the page. montserrat as main font, sans-serif as fallback */
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -5,12 +9,21 @@
   box-sizing: border-box;
 }
 
+/* make sure the main body stretches to 100vh for easier layout. we're using angular and things are pretty dynamic, so this is just insurance. */
 body {
   margin: 0;
+  height: 100vh;
 }
 
+/* this will push the current router page to be 85% of the viewport height. due to angular being dynamic and all, typical footer setup is tricky, this is a simple workaround. */
+.push_footer {
+  display: block;
+  height: 85vh;
+}
+
+/* set the color, and max out the height at all times. overflow-y to auto for autohide of scrollbar. */
 html {
-  background-color: rgb(37, 35, 35); 
+  background-color: $primary_color; 
   min-height:  100vh; 
   margin: 0;
   overflow-y: auto;

@@ -5,11 +5,11 @@
   rel="stylesheet"
 />
 <!--TODO: create mobile layout and apply if media query matches -->
-@if (screen_status.is_widescreen | async) {
-  <script>console.log("this is a widescreen device.")</script>
+@if (device_orientation == WEB) {
+  
 }
 <div>
   <app-navbar></app-navbar>
   <app-route-view></app-route-view>
-  <app-footer></app-footer>
+  <app-footer class="footer"></app-footer>
 </div>

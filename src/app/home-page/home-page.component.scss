@@ -1,17 +1,25 @@
+/* main color. used for background. */
 $primary_color: rgb(37, 35, 35);
+/* secondary color. used for pretty much everyhing besides plaintext and the background. */
 $secondary_color: rgb(241, 97, 125);
-
+/* universal text color. */
 * {
   color: whitesmoke;
 }
+/* decorate our links to match the theme. pink is the best color :) */
+a {
+  color: $secondary_color;
+  text-decoration: none;
+}
+/* settings for the used mat-icons (in this case its the download icon). */
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   align-self: center;
 }
 
+/* title section for the page. */
 .title_div {
-  //background-color: lightcoral;
-  padding-bottom: 100px;
+  /* big text announcing the name of the page. */
   .name_announce {
     display: block;
     margin-right: auto;
@@ -20,11 +28,12 @@ $secondary_color: rgb(241, 97, 125);
     font-weight: 150;
     text-align: center;
   }
-
+  /* subtext under the big text, a tagline or follow up sentence to the title. */
   .tagline {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     padding-right: 2em;
     padding-left: 2em;
     font-weight: 200;
@@ -33,18 +42,19 @@ $secondary_color: rgb(241, 97, 125);
 }
 
 .about_me {
-  //background-color: lightgreen;
   display: block;
   width: 100%;
   overflow: hidden;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 
   .self_photo {
-    display: inline-block;
+    display: block;
     width: 15em;
     height: 15em;
-    margin-right: 5em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
 
     img {
       width: inherit;
@@ -56,8 +66,9 @@ $secondary_color: rgb(241, 97, 125);
 
   .self_info {
     display: inline-block;
-    text-align: left;
-    width: 40%;
+    text-align:center;
+    width: 75%;
+    max-width: 400px;
   }
 }
 
@@ -72,7 +83,7 @@ $secondary_color: rgb(241, 97, 125);
   a {
     text-decoration: none;
     color: inherit;
-    display: inline-block; /* Display content inline */
+    display: inline-block;
     text-align: center;
     width: inherit;
   }

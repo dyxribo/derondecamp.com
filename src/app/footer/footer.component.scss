@@ -1,22 +1,23 @@
 $secondary_color: rgb(241, 97, 125);
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 3em;
-  margin-top: 3em;
-  background-color: $secondary_color;
+  height: 3rem;
+  margin-top: 2em;
+  margin-bottom: 0;
+  border-color: $secondary_color;
+  border-top: 2px $secondary_color solid;
   text-align: center;
-  
-  p {
-    padding-top: 1em;
-  }
+  padding: 1rem;
 }
-
+.footer_copy {
+  color: whitesmoke;
+}
 .footer_logo {
   position: absolute;
   left: 10px;
-  width: 50px;
-  height: 50px;
+  bottom: 5px;
+  width: 30px;
 }
