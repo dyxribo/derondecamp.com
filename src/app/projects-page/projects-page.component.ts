@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   },
   standalone: true,
   imports: [],
-  
+
   templateUrl: './projects-page.component.html',
   styleUrl: './projects-page.component.scss'
 })

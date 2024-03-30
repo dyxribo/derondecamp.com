@@ -13,7 +13,11 @@ a {
 }
 /* settings for the used mat-icons (in this case its the download icon). */
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 48;
   align-self: center;
 }
 
@@ -51,11 +55,11 @@ a {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  
+
   div {
     display: inline-block;
   }
-  
+
   .img_container {
     width: 100%;
     /* image for the project. */

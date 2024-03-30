@@ -10,7 +10,7 @@ html {
   height: 60px;
   padding: 10px;
   margin-bottom: 0px;
-  
+
   .menu_items {
     float: left;
     padding: 10px;
@@ -29,16 +29,18 @@ html {
       border-radius: 0;
       color: $secondary_color;
 
-      :hover {
-        background: none;
+      @media (hover: hover) {
+        :hover {
+          /* hover styles */
+          background: none;
+        }
       }
     }
-    :hover {
-      background-color: rgba($color: white, $alpha: 0.2);
-      //animation-name: glow;
-      //animation-duration: 0.5s;
-      //animation-fill-mode: both;
-      fill-opacity: 0.2;
+    @media (hover: hover) {
+      :hover {
+        background-color: rgba($color: white, $alpha: 0.2);
+        fill-opacity: 0.2;
+      }
     }
   }
 }

@@ -23,8 +23,8 @@ body {
 
 /* set the color, and max out the height at all times. overflow-y to auto for autohide of scrollbar. */
 html {
-  background-color: $primary_color; 
-  min-height:  100vh; 
+  background-color: $primary_color;
+  min-height: 100vh;
   margin: 0;
   overflow-y: auto;
 }
