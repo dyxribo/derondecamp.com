@@ -61,11 +61,15 @@ a {
   }
 
   .img_container {
-    width: 100%;
+    display: block;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     /* image for the project. */
     img {
-      width: inherit;
-      height: auto;
+      width: -webkit-fill-available;
+      height: inherit;
       margin: auto;
     }
   }
