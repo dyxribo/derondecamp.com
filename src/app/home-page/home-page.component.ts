@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DeviceFormFactor } from '../app.component';
-import { Observable } from 'rxjs';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -13,11 +11,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class HomePageComponent {
 
-  constructor() {
-
-  }
-
-  ngOnInit() {
-
-  }
+  
 }
