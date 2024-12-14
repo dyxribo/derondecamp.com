@@ -1,16 +1,20 @@
 /* main color. used for background. */
 $primary_color: rgb(37, 35, 35);
-/* secondary color. used for pretty much everyhing besides plaintext and the background. */
+
+/* secondary color. used for pretty much everything besides plaintext and the background. */
 $secondary_color: rgb(241, 97, 125);
+
 /* universal text color. */
 * {
   color: white;
 }
+
 /* decorate our links to match the theme. pink is the best color :) */
 a {
   color: $secondary_color;
   text-decoration: none;
 }
+
 /* settings for the used mat-icons (in this case its the download icon). */
 .material-symbols-outlined {
   font-variation-settings:
@@ -55,29 +59,39 @@ a {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 50px;
 
-  div {
-    display: inline-block;
+  .project_item {
+    display: flow-root;
+    margin: 30px 0;
+
+    .img_container {
+        float: left;
+        height: auto;
+        width: 50%;
+        margin-left: auto;
+        margin-right: 100px;
+        border: 2px solid $secondary_color;
+        border-radius: 3px;
+        /* image or video used to display the project. */
+        a > img, video {
+          width: -webkit-fill-available;
+          height: inherit;
+          margin: auto;
+        }
+      }
+
+      /* project title and paragraph description */
+      .text_container {
+        width: 100%;
+        max-height: 90%;
+
+        a h2 {
+          text-decoration: underline;
+          text-underline-offset: 5px;
+        }
+      }
   }
 
-  .img_container {
-    display: block;
-    height: auto;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    /* image for the project. */
-    img {
-      width: -webkit-fill-available;
-      height: inherit;
-      margin: auto;
-    }
-  }
-  /* project title and paragraph description */
-  .text_container {
-    width: 100%;
-    max-height: 90%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-  }
+  
 }
